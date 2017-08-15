@@ -1,0 +1,2 @@
+module JidoHelper
+end

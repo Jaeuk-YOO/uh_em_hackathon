@@ -1,0 +1,100 @@
+
+/* Common Settings */
+
+html {
+  /* 1rem === 15px */
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+* {
+  font-family:'jejugothic', sans-serif;
+  letter-spacing: -0.02em;
+  color: #333;
+}
+
+[lang="en"]{
+  font-family: 'Hanna', sans-serif;
+}
+
+button:focus{
+  outline:none;
+}
+button{
+  cursor:pointer;
+  border:none;
+}
+.text-primary{
+  color:#ff8e1e !important;
+}
+.bg-setting{
+  background-color:#B2E0EC;
+  border-radius: 100px;
+  border:none;
+}
+a.bg-setting:focus,
+a.bg-setting:hover {
+  background-color:#0CE4F4;
+}
+/*Header*/
+
+.brand {
+  margin-bottom: 0;
+  font-size: 1.333333rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.55em;
+}
+
+.nav-link{
+  font-size: 0.73rem;
+  line-height: 1.82;
+  letter-spacing: 0.55em;
+  text-transform: uppercase;
+}
+.navbar.bg-setting {
+  background-color: #fff !important;
+}
+.navbar-toggler{
+  border:none;
+}
+
+.fa fa-server{
+  position: relative;
+  top:1px;
+}
+
+/* Menu */
+
+.list-group-item{
+  justify-content:center;
+}
+.a{
+  color:inherit;
+}
+.a:hover{
+  text-decoration:none !important;
+}
+
+.about__data{
+
+  flex-direction: row-reverse;
+  justify-content:end;
+
+}
+
+.about__datum {
+  flex-direction:column;
+  border-right: 1px solid;
+}
+
+/*별점주기*/
+
+div.point1 {
+        background:url('test/star_off.gif') no-repeat;
+        width:59px;
+        height:11px;
+    }
+div.point1 div.point2 {
+        overflow:hidden;
+    }

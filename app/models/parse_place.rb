@@ -1,0 +1,2 @@
+class ParsePlace < ApplicationRecord
+end

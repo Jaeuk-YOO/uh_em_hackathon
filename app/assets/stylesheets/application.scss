@@ -1,0 +1,199 @@
+@import 'bootstrap.min';
+@import 'demo';
+/*
+
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require_bootstrap.min
+ *= require_demo
+ *= require_uh_em
+ */
+
+
+ // google web font hangeal
+ @import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+
+// for devise
+.log { margin: auto; width: 300px; }
+.log h2 { text-align: center; }
+#user_email, #user_password, #user_password_confirmation, #user_username { width: 300px; height: 40px;}
+.field { margin: auto; padding-top: 5px; padding-bottom: 5px; }
+.actions { padding: 10px; text-align: center; }
+.submitida { width: 86px; height: 36px; }
+// end devise
+
+ html {
+   font-size: 15px;
+   line-height: 1.6;
+ }
+
+ * {
+   font-family: 'Open Sans', sans-serif;
+   color: #181818;
+   box-sizing:border-box;
+ }
+
+.index {
+  width: 100%;
+  height: 100vh;
+  background: url('/assets/buger-edit.jpg') no-repeat;
+  background-position: center top;
+}
+
+.field {
+  ;
+}
+
+.navbar {
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  background: none;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  color: white;
+}
+
+.navbar .navbar-nav li a {
+  color: white;
+}
+
+ .navbar .navbar-brand {
+   font-family: 'Hanna', serif;
+   font-size: 1.333rem;
+   font-weight: 400;
+   line-height: 1;
+   color: white;
+ }
+
+.index-logo {
+  width: auto;
+  height: 40vh;
+  padding-top: 70px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.buttons {
+  margin-top: 3rem;
+}
+
+.price {
+  width: 350px;
+  height: auto;
+  margin: auto;
+}
+
+.buttons .price .price-1 {
+  height: 40.5px;
+  width: inherit;
+  background: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  line-height: 1.23;
+  color: white;
+}
+
+.buttons .price .price-2 {
+  height: 40.5px;
+  width: inherit;
+  background: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  line-height: 1.23;
+  color: white;
+}
+
+.buttons .price .location {
+  height: 40.5px;
+  width: inherit;
+  background: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  line-height: 1.23;
+  color: white;
+}
+
+.buttons .price .submitbutton {
+  height: 40.5px;
+  width: inherit;
+  background: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  line-height: 1.23;
+  color: white;
+}
+
+.price-1 label {
+  color: white;
+}
+
+.price-1 .price_low {
+  color: white;
+}
+
+input#priceLow.price_low {
+  background: none;
+  border: none;
+}
+
+.price-2 label {
+  color: white;
+}
+
+.price-2 .price_top {
+  color: white;
+}
+
+input#priceTop.price_top {
+  background: none;
+  border: none;
+}
+
+.location {
+  width: 310px;
+  height: auto;
+}
+
+.location input {
+  color: white;
+}
+
+.location .userlocation {
+  color: white;
+}
+
+input#userLocation.user_location {
+  background: none;
+  border: none;
+  color: white;
+}
+
+
+
+.buttons .submitbutton button {
+  background: none;
+  border: none;
+}
+
+::-webkit-input-placeholder { /* 크롬 4–56 */
+    color: #fff;
+}
