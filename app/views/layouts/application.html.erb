@@ -31,15 +31,19 @@
   <body>
     <!-- nav -->
     <nav class="navbar navbar-toggleable-md
-    navbar-light mx-5 px-5">
-      <button class="navbar-toggler navbar-toggler-right bg-main" type="button"
+    navbar-light px-3">
+    <div clss="my-toggler">
+      <button class="navbar-toggler navbar-toggler-right bg-main btn-outline-secondary" type="button"
        data-toggle="collapse"  data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+       MENU
       </button>
+    </div>
 
-        <div class="brand">
-          <a class="navbar-brand" href="/uh_em/index">어-음?</a>
-        </div>
+      <nav class="navbar navbar-light navbar-logo">
+        <a class="navbar-brand" href="#">
+          <img src="/assets/uh_em_logo.png" width=auto height="30" alt="uh_em_logo_nav">
+        </a>
+      </nav>
 
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <div class="row justify-content-end">
@@ -54,7 +58,7 @@
                 </li>
                 <li class="nav-item px-4">
                   <a class="nav-link" href="/users/sign_up">SIGN-UP</a>
-                </li>
+                </li>,
               </ul>
             <% else %>
               <ul class="navbar-nav">
