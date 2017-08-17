@@ -1,3 +1,4 @@
+
 // Place all the styles related to the uh_em controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
@@ -20,7 +21,7 @@
   background-size: contain;
 }
 
-.container {
+.index__logo {
   max-width: 370px;
   width: 350px;
   padding: 0;
@@ -133,8 +134,67 @@ input#userLocation.user_location {
 }
 
 // mymenu페이지 스타일
-
-.mymenu__section {
-  height: 100vh;
+.mymenu__bg__con {
   padding-top: 65px;
+}
+
+.mymenu__bg {
+  height: 55vh;
+  background-image: url(/assets/mymenu-bg.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 596px) {
+.mymenu__bg {
+  height: 60vh;
+}
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+  .mymenu__bg {
+    height: 70vh;
+}
+}
+
+.mymenu__logo {
+  height: 10vh;
+  background-image: url(/assets/mymenu-logo.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.mymenu__text {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  padding-top: 1rem;
+}
+
+// card
+
+.about__datum {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card_button {
+  color: black;
+}
+
+.card_button button:focus {
+  text-decoration: none;
+}
+
+.card_button button {
+  cursor: pointer;
 }
