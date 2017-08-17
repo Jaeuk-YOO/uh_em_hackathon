@@ -12,7 +12,8 @@ Rails.application.routes.draw do
   post '/jido/maps' => 'mylocation#create'
   get '/jido/search'
   post 'jido/search' => 'parse#search_create'
-  get '/parse/doc'
+
+  get '/parse/parse_view'
 
 # /models/sign_in
 # /models/sign_out
