@@ -1,3 +1,124 @@
 // Place all the styles related to the uh_em controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.index-logo {
+  width: auto;
+  height: 40vh;
+  padding-top: 70px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.buttons {
+  margin-top: 3rem;
+}
+
+.price {
+  width: 350px;
+  height: auto;
+  margin: auto;
+}
+
+.buttons .price .price-1 {
+  height: 40.5px;
+  width: inherit;
+  background: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  line-height: 1.23;
+  color: white;
+}
+
+.buttons .price .price-2 {
+  height: 40.5px;
+  width: inherit;
+  background: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  line-height: 1.23;
+  color: white;
+}
+
+.buttons .price .location {
+  height: 40.5px;
+  width: inherit;
+  background: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  line-height: 1.23;
+  color: white;
+}
+
+.buttons .price .submitbutton {
+  height: 40.5px;
+  width: inherit;
+  background: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  line-height: 1.23;
+  color: white;
+}
+
+.price-1 label {
+  color: white;
+}
+
+.price-1 .price_low {
+  color: white;
+}
+
+input#priceLow.price_low {
+  background: none;
+  border: none;
+}
+
+.price-2 label {
+  color: white;
+}
+
+.price-2 .price_top {
+  color: white;
+}
+
+input#priceTop.price_top {
+  background: none;
+  border: none;
+}
+
+.location {
+  width: 310px;
+  height: auto;
+}
+
+.location input {
+  color: white;
+}
+
+.location .userlocation {
+  color: white;
+}
+
+input#userLocation.user_location {
+  background: none;
+  border: none;
+  color: white;
+}
+
+
+
+.buttons .submitbutton button {
+  background: none;
+  border: none;
+}
+
+::-webkit-input-placeholder { /* 크롬 4–56 */
+    color: #fff;
+}
