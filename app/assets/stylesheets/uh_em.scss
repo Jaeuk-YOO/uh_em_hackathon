@@ -21,10 +21,17 @@
   background-size: contain;
 }
 
-.index__logo {
-  max-width: 370px;
-  width: 350px;
-  padding: 0;
+@media screen and (max-width: 596px) {
+.index-logo {
+  height: 23vh;
+  margin-left: 8vh;
+}
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+.index-logo {
+    height: 50vh;
+}
 }
 
 // 가격버튼
@@ -151,13 +158,13 @@ input#userLocation.user_location {
 
 @media screen and (max-width: 596px) {
 .mymenu__bg {
-  height: 60vh;
+  height: 30vh;
 }
 }
 
 @media screen and (min-width:577px) and (max-width:992px) {
   .mymenu__bg {
-    height: 70vh;
+    height: 50vh;
 }
 }
 
@@ -171,12 +178,26 @@ input#userLocation.user_location {
   justify-content: center;
   flex-direction: column;
 }
+
+@media screen and (max-width: 596px) {
+.mymenu__logo {
+  height: 8vh;
+}
+}
+
 .mymenu__text {
   color: white;
   font-size: 1.2rem;
   font-weight: 300;
   letter-spacing: 0.1rem;
   padding-top: 1rem;
+}
+
+@media screen and (max-width: 596px) {
+.mymenu__text {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+}
 }
 
 // card
