@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="ko">
 
 <head>
 <meta charset="utf-8">
-<title>부트스트랩 복습</title>
+<title>MY MENU</title>
 <!--Bootstrap CDN-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 <!--Custom css-->
-<link rel="stylesheet" href="style/css.css">
+<link rel="stylesheet" href="/assets/uh_em.scss">
 <!--fontawesome CDN-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!--JQuery CDN-->
@@ -18,66 +18,65 @@
 	@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
 </style>
 	<body>
+		<!-- mymenu section		 -->
+		<section id="clubs" class="mymenu__section">
+			  	<div class="container">
+				  	<header class="section__header">
+				  		<h2 class="section__title mb-3">
+				  			<span class="section__category mb-2" lang="en">어-음?</span>
+				  			어음에서 소개하는 매뉴들
+				  		</h2>
+				  		<p class="section__text">
+				  			어.. 음에서 소개하는 매뉴들을 소개합니다.
+				  		</p>
+				  	</header>
 
-  <section id="clubs" class="section">
-	  	<div class="container">
-		  	<header class="section__header">
-		  		<h2 class="section__title mb-3">
-		  			<span class="section__category mb-2" lang="en">어...음?</span>
-		  			어음에서 소개하는 매뉴들
-		  		</h2>
-		  		<p class="section__text">
-		  			어.. 음에서 소개하는 매뉴들을 소개합니다.
-		  		</p>
-		  	</header>
 
 
+			<div class="cards row mt-5">
+		 		<div class="col-12 col-md-6 col-lg-6 col-xl-4">
+				  <div class="card mb-3 mb-md-0">
+					  <div class="card-block">
+					    <h4 class="card-title mb-2">라볶이 매운맛</h4>
+					    <p class="card-text">5000000원</p>
+			  <img class="card-img-top" src="..." alt="이 위치에 이미지가 들어오면 됩니다">
 
-	<div class="cards row mt-5">
- 		<div class="col-12 col-md-6 col-lg-6 col-xl-4">
-		  <div class="card mb-3 mb-md-0">
-			  <div class="card-block">
-			    <h4 class="card-title mb-2">라볶이 매운맛</h4>
-			    <p class="card-text">5000000원</p>
-	  <img class="card-img-top" src="..." alt="이 위치에 이미지가 들어오면 됩니다">
-
-	<hr>
-					<div class="container justify-contnet-center">
-						<div class="about__data d-flex">
-							<div class="about__datum pr-5 pr-xl-3 pr-md-3 pr-lg-4 pr-sm-5">
-								<div class="icon">
-									<i class="fa fa-map-marker" aria-hidden="true"></i>
+			<hr>
+							<div class="container justify-contnet-center">
+								<div class="about__data d-flex">
+									<div class="about__datum pr-5 pr-xl-3 pr-md-3 pr-lg-4 pr-sm-5">
+										<div class="icon">
+											<i class="fa fa-map-marker" aria-hidden="true"></i>
+										</div>
+										<a href="#">LOCATION</a>
+									</div>
+									<div class="about__datum px-4 px-xl-3 px-md-2 px-lg-3 px-sm-5">
+										<div class="icon">
+											<i class="fa fa-info-circle" aria-hidden="true"></i>
+										</div>
+										<div><a href="#">INFO</a></div>
+									</div>
+									<div class="about__datum px-5 px-xl-3 px-md-2 px-lg-3 px-sm-5">
+										<div class="icon">
+											<i class="fa fa-cart-plus" aria-hidden="true"></i>
+										</div>
+										<div><a href="#">CART</a></div>
+									</div>
+									<div class="about__datum pl-5 pl-xl-3 pl-md-3 pl-lg-4 pl-sm-5">
+										<div class="icon">
+											<i class="fa fa-star" aria-hidden="true"></i>
+										</div>
+										<div><a href="#">REVIEW</a></div>
+									</div>
 								</div>
-								<a href="#">LOCATION</a>
 							</div>
-							<div class="about__datum px-4 px-xl-3 px-md-2 px-lg-3 px-sm-5">
-								<div class="icon">
-									<i class="fa fa-info-circle" aria-hidden="true"></i>
-								</div>
-								<div><a href="#">INFO</a></div>
-							</div>
-							<div class="about__datum px-5 px-xl-3 px-md-2 px-lg-3 px-sm-5">
-								<div class="icon">
-									<i class="fa fa-cart-plus" aria-hidden="true"></i>
-								</div>
-								<div><a href="#">CART</a></div>
-							</div>
-							<div class="about__datum pl-5 pl-xl-3 pl-md-3 pl-lg-4 pl-sm-5">
-								<div class="icon">
-									<i class="fa fa-star" aria-hidden="true"></i>
-								</div>
-								<div><a href="#">REVIEW</a></div>
-							</div>
-						</div>
-					</div>
-	  		</div>
-		  </div>
-		</div>
-	</div>
+			  		</div>
+				  </div>
+				</div>
+			</div>
 
 
-  </section>
-
-
+		</section>
+		<!-- mymenu section end -->
 	</body>
 </html>
