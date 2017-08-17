@@ -1,29 +1,33 @@
+
 // Place all the styles related to the uh_em controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+// index페이지 로고
+
 .index-logo {
   max-width: 370px;
-  width: inherit;
-  height: 30vh;
-  padding-top: 70px;
+  height: 23vh;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  padding-top: 65px;
   padding-left: 0;
   padding-right: 0;
-  margin-left: 0.2vh;
+  margin-left: 0.5vh;
+  margin-top: 20vh;
+  background: url(/assets/0812index-logo.png) no-repeat;
+  background-size: contain;
 }
 
-.container {
+.index__logo {
   max-width: 370px;
   width: 350px;
   padding: 0;
 }
-.buttons {
-  margin-top: 3rem;
-}
+
+// 가격버튼
 
 .price {
   width: 350px;
@@ -120,7 +124,6 @@ input#userLocation.user_location {
   color: white;
 }
 
-
 .buttons .submitbutton button {
   background: none;
   border: none;
@@ -128,4 +131,70 @@ input#userLocation.user_location {
 
 ::-webkit-input-placeholder { /* 크롬 4–56 */
     color: #fff;
+}
+
+// mymenu페이지 스타일
+.mymenu__bg__con {
+  padding-top: 65px;
+}
+
+.mymenu__bg {
+  height: 55vh;
+  background-image: url(/assets/mymenu-bg.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 596px) {
+.mymenu__bg {
+  height: 60vh;
+}
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+  .mymenu__bg {
+    height: 70vh;
+}
+}
+
+.mymenu__logo {
+  height: 10vh;
+  background-image: url(/assets/mymenu-logo.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.mymenu__text {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  padding-top: 1rem;
+}
+
+// card
+
+.about__datum {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card_button {
+  color: black;
+}
+
+.card_button button:focus {
+  text-decoration: none;
+}
+
+.card_button button {
+  cursor: pointer;
 }

@@ -30,8 +30,7 @@
 
   <body>
     <!-- nav -->
-    <nav class="navbar navbar-toggleable-md
-    navbar-light px-3">
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-light px-3">
     <div clss="my-toggler">
       <button class="navbar-toggler navbar-toggler-right bg-main btn-outline-secondary" type="button"
        data-toggle="collapse"  data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,7 +39,7 @@
     </div>
 
       <nav class="navbar navbar-light navbar-logo">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/uh_em/index">
           <img src="/assets/uh_em_logo.png" width=auto height="30" alt="uh_em_logo_nav">
         </a>
       </nav>
@@ -51,7 +50,7 @@
             <% if current_user.nil? %>
               <ul class="navbar-nav">
                 <li class="nav-item px-4 active">
-                  <a class="nav-link" href="">SEARCH<span class="sr-only">(현재 페이지)</span></a>
+                  <a class="nav-link" href="/uh_em/index">SEARCH<span class="sr-only">(현재 페이지)</span></a>
                 </li>
                 <li class="nav-item px-4">
                   <a class="nav-link" href="/users/sign_in">LOG-IN</a>
@@ -66,10 +65,10 @@
                   <a class="nav-link"> ㅇㅇㅇ님 안녕하세요! </a>
                 </li>
                 <li class="nav-item px-4 active">
-                  <a class="nav-link" href="">SEARCH<span class="sr-only">(현재 페이지)</span></a>
+                  <a class="nav-link" href="/uh_em/index">SEARCH<span class="sr-only">(현재 페이지)</span></a>
                 </li>
                 <li class="nav-item px-4">
-                  <a class="nav-link" href="#">MY MENU</a>
+                  <a class="nav-link" href="/uh_em/mymenu">MYMENU</a>
                 </li>
                 <li class="nav-item px-4">
                   <a class="nav-link" href="/users/sign_out">LOG-OUT</a>
