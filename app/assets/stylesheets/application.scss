@@ -70,7 +70,16 @@
   color: white;
   text-transform: uppercase;
   font-weight: 300;
-  letter-spacing: 0.3rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.2rem;
+}
+
+@media screen and (max-width: 596px) {
+.navbar .navbar-nav .nav-item .nav-link {
+  letter-spacing: 0.05rem;
+  font-size: 0.7rem;
+  text-align: right;
+}
 }
 
 .navbar .navbar-nav li a {
