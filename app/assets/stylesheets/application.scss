@@ -80,8 +80,14 @@
  }
 
  .navbar .navbar-toggler {
-   border-color: white;
-   color: white;
+   border-color: white !important;
+   color: white !important;
    font-size: 1rem;
    line-height: 1.6;
+   margin-top: 1vh;
+ }
+
+ .mytoggler {
+   width: 69px;
+   height: auto;
  }
