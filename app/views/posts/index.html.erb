@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="col-4">
+    <div class="col-6">
       <div class="review__text">
         <% @post.each do |x| %>
           <h2><%= x.id %>번째 리뷰</h2>
@@ -12,9 +12,9 @@
     </div>
 <hr>
     <div class="container">
-      <div class="col-4">
+      <div class="col-12">
         <form action="/posts/create">
-            <h3>리뷰를 달아주세요 :<input type="textarea" name="content" placeholder="내용을 입력하세요."></h3>
+            <h3>리뷰를 달아주세요 : <input type="textarea" name="content" placeholder="내용을 입력하세요."></h3>
             <h2><button type="submit" >제출하기!</button></h2>
         </form>
       </div>
