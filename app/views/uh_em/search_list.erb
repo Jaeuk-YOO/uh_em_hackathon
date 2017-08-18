@@ -1,1 +1,7 @@
-
+  <%@current_user_search_all.each do |x|%>
+    <%=x.place_name%> : <%=x.place_id%> <br>
+    <%x.parse_places.each do |y|%>
+      <%y.menuList.each do |xx|%>
+        <%=xx.values_at("menu")[0]%> : <%=xx.values_at("price")[0]%>원<br>
+    <%end%><%end%>
+  <%end%>

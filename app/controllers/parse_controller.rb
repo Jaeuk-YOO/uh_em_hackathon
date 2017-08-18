@@ -25,6 +25,7 @@ class ParseController < ApplicationController
       get_info.each do |key, value|
         if key.include? "menuInfo"
             pp = ParsePlace.new
+            pp.user_search_id = current_user.user_searches.where(place_id: params[:place_id]).take.id
             pp.menuCount = value.values_at("menucount").pop
             pp.menuList = value.values_at("menuList").flatten
             pp.menuboardphotourlList = value.values_at("menuboardphotourlList").flatten
