@@ -9,14 +9,14 @@
 .index-logo {
   max-width: 370px;
   height: 23vh;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 65px;
+  // align-items: center;
+  // flex-direction: column;
+  // justify-content: center;
+  // padding-top: 65px;
   padding-left: 0;
   padding-right: 0;
-  margin-left: 0.5vh;
-  margin-top: 20vh;
+  margin-left: 1em;
+  margin-top: 15vh;
   background: url(/assets/0812index-logo.png) no-repeat;
   background-size: contain;
 }
@@ -25,24 +25,56 @@
 .index-logo {
   height: 23vh;
   margin-left: 8vh;
+  margin-top: 5vh;
 }
 }
 
 @media screen and (min-width:577px) and (max-width:992px) {
 .index-logo {
     height: 30vh;
+    margin-left: 13vh;
+}
+}
+
+// 로고와 가격버튼 사이 text
+.buttons__text {
+  color: white;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  font-size: 1rem;
+  line-height: 1.6;
+  justify-content: center;
+}
+
+@media screen and (max-width: 596px) {
+.buttons__text {
+  font-size: 0.8rem;
+  line-height: 1.0;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+  padding: 0;
+}
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+.buttons__text {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  letter-spacing: 0.075em;
+  margin-bottom: 0.5rem;
+  padding: 0;
 }
 }
 
 // 가격버튼
-
 .price {
   width: 350px;
   height: auto;
   margin: auto;
 }
 
-.buttons .price .price-1 {
+ .price .price-1 {
   height: 40.5px;
   width: inherit;
   background: none;
@@ -53,7 +85,7 @@
   color: white;
 }
 
-.buttons .price .price-2 {
+.price .price-2 {
   height: 40.5px;
   width: inherit;
   background: none;
@@ -64,7 +96,7 @@
   color: white;
 }
 
-.buttons .price .location {
+.price .location {
   height: 40.5px;
   width: inherit;
   background: none;
@@ -75,7 +107,7 @@
   color: white;
 }
 
-.buttons .price .submitbutton {
+.price .submitbutton {
   height: 40.5px;
   width: inherit;
   background: none;
@@ -112,30 +144,25 @@ input#priceTop.price_top {
   border: none;
 }
 
-.location {
-  width: 310px;
-  height: auto;
-}
-
-.location input {
-  color: white;
-}
-
-.location .userlocation {
-  color: white;
-}
-
-input#userLocation.user_location {
-  background: none;
-  border: none;
-  color: white;
-}
-
-.buttons .submitbutton button {
+.submitbutton button {
   background: none;
   border: none;
 }
 
 ::-webkit-input-placeholder { /* 크롬 4–56 */
     color: #fff;
+}
+
+.notice {
+  background: none;
+  display: flex;
+  font-weight: 700;
+  color: #f15a24;
+}
+
+.alert {
+  background: none;
+  display: flex;
+  font-weight: 700;
+  color: #f15a24;
 }
