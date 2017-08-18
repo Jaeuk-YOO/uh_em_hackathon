@@ -13,6 +13,7 @@
 ActiveRecord::Schema.define(version: 20170818062219) do
 
   create_table "parse_places", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer "user_search_id"
     t.string "menuCount"
     t.json "menuList"
     t.json "menuboardphotourlList"

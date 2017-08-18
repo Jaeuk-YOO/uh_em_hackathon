@@ -4,6 +4,8 @@ class UhEmController < ApplicationController
   end
 
   def search_list # 넘어온 정보와 일치하는 정보 리스트
+    @current_user_search_all = UserSearch.all.where(user_id: current_user.id).all
+
   end
   def search_one # 사용자가 클릭한 하나의 메뉴 정보
   end
@@ -28,4 +30,4 @@ class UhEmController < ApplicationController
 
   # 로케이션 버튼을 누르면 네이버 길찾기 페이지로 넘어가게 하기
 
-end 
+end
