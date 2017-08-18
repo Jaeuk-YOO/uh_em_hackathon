@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'mailgunner'
 gem 'devise-i18n'
 gem 'rails_db'
 gem 'devise'

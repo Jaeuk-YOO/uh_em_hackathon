@@ -2,6 +2,13 @@ Rails.application.configure do
   # 추가코드
   config.action_mailer.default_url_options = { host: 'localhost:3000' }
 
+  config.action_mailer.delivery_method = :mailgun
+  config.action_mailer.mailgun_settings = {
+  		api_key: 'key-22f2f3ea49ed1a5000b1585fef994a49',
+  		domain: 'sandboxfbb9a6971e6f4bf6aad62c9206aceed7.mailgun.org'
+  }
+  # devise를 위한 추가코드 끝
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
