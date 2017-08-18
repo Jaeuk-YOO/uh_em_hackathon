@@ -87,6 +87,96 @@ a.bg-setting:hover {
   flex-direction:column;
 }
 
+/*수진추가*/
+
+
+.mymenu__bg {
+  height: 55vh;
+  background-image: url(/assets/mymenu-bg.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 596px) {
+.mymenu__bg {
+  height: 30vh;
+}
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+  .mymenu__bg {
+    height: 50vh;
+}
+}
+
+.mymenu__logo {
+  height: 10vh;
+  background-image: url(/assets/mymenu-logo.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 596px) {
+.mymenu__logo {
+  height: 8vh;
+}
+}
+
+.mymenu__text {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  padding-top: 1rem;
+}
+
+@media screen and (max-width: 596px) {
+.mymenu__text {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+}
+}
+
+.mymenu__header {
+  height: 20vh;
+  width: 40vh;
+  background-image: url(/assets/mymenulist.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  margin: auto;
+}
+
+// card
+
+.about__datum {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card_button {
+  color: black;
+}
+
+.card_button button:focus {
+  text-decoration: none;
+}
+
+.card_button button {
+  cursor: pointer;
+}
+
+
 /*별점주기*/
 
 div.point1 {
