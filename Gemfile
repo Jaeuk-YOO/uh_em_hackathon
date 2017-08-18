@@ -4,9 +4,7 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
-
-gem 'rolify'     # role 관리
-gem 'authority' 
+ 
 gem 'mailgun-ruby'
 gem 'mailgunner'
 gem 'devise-i18n'
