@@ -64,6 +64,7 @@
   background: #f15a24;
   padding-top: 0;
   padding-bottom: 0;
+  position: fixed;
 }
 
 .navbar-logo {
@@ -77,6 +78,7 @@
   font-weight: 300;
   font-size: 0.9rem;
   letter-spacing: 0.2rem;
+
 }
 
 @media screen and (max-width: 596px) {
