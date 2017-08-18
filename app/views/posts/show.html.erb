@@ -2,6 +2,6 @@
 <%=@post.title %>
 <%=@post.content %>
 
-<%= link_to '글 수정하기', "/posts/edit/#{x.id}" %>
-<%= link_to '글 삭제하기', "/posts/destroy/#{x.id}" %>
-<%=link_to "목록으로 가기", '/posts/index' %>
+<%= link_to '글 수정하기', "/posts/edit/#{@post.id}" %>
+<%= link_to '글 삭제하기', "/posts/destroy/#{@post.id}" %>
+<p>작성하신게 맞다면?? : <%=link_to "목록으로 가기", '/posts/index' %></p>

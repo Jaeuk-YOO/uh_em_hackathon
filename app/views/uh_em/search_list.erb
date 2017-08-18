@@ -1,7 +1,88 @@
-  <%@current_user_search_all.each do |x|%>
-    <%=x.place_name%> : <%=x.place_id%> <br>
+<%@current_user_search_all.each do |x|%>
+  <div class="place__name">
+    <h2><%=x.place_name%> : </h2>
+  </div>
     <%x.parse_places.each do |y|%>
       <%y.menuList.each do |xx|%>
-        <%=xx.values_at("menu")[0]%> : <%=xx.values_at("price")[0]%>원<br>
+      <!-- <div id="clubs" class="mymenu__section container"> -->
+      	<div class="container">
+      		<div class="cards row mt-2">
+      	 		<div class="col-12 col-md-6 col-lg-6 col-xl-4 push-xl-8 push-lg-7 push-md-7">
+      			  <div class="card p-3">
+                <div class="menu_name">
+                  <h4><%=xx.values_at("menu")[0]%> : <%=xx.values_at("price")[0]%>원</h4>
+                </div>
+      						<div class="about__data d-flex">
+      							<div class="about__datum pr-4 pr-xl-3 pr-md-3 pr-lg-4 pr-sm-5">
+      								<div class="icon">
+      									<i class="fa fa-map-marker" aria-hidden="true"></i>
+      								</div>
+      								<a class="card_button" href="#">LOCATION</a>
+      							</div>
+      							<div class="about__datum px-5 px-xl-3 px-md-2 px-lg-3 px-sm-5">
+      								<div class="icon">
+      									<i class="fa fa-info-circle" aria-hidden="true"></i>
+      								</div>
+      								<div><a class="card_button" href="#">INFO</a></div>
+      							</div>
+      							<div class="about__datum px-5 px-xl-3 px-md-2 px-lg-3 px-sm-5">
+      								<div class="icon">
+      									<i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+      								</div>
+      									<div><a class="card_button" href=# data-confirm="담으시겠습니까?">CART</a></div>
+      							</div>
+      							<div class="about__datum pl-4 pl-xl-3 pl-md-3 pl-lg-4 pl-sm-5">
+      									<div class="icon">
+      										<i class="fa fa-star" aria-hidden="true"></i>
+      									</div>
+      								<div><a class="card_button" href="/posts/index">REVIEW</a></div>
+      							</div>
+      						</div>
+      	  		</div>
+      		  </div>
+      		</div>
+      	</div>
+      </div> -
+        <!-- <%=xx.values_at("menu")[0]%> : <%=xx.values_at("price")[0]%>원<br> -->
     <%end%><%end%>
+    <hr>
   <%end%>
+
+
+
+  <!-- <div id="clubs" class="mymenu__section container">
+  	<div class="container">
+  		<div class="cards row mt-5">
+  	 		<div class="col-12 col-md-6 col-lg-6 col-xl-4 push-xl-8 push-lg-7 push-md-7">
+  			  <div class="card d-flex">
+  						<div class="about__data d-flex">
+  							<div class="about__datum pr-4 pr-xl-3 pr-md-3 pr-lg-4 pr-sm-5">
+  								<div class="icon">
+  									<i class="fa fa-map-marker" aria-hidden="true"></i>
+  								</div>
+  								<a class="card_button" href="#">LOCATION</a>
+  							</div>
+  							<div class="about__datum px-5 px-xl-3 px-md-2 px-lg-3 px-sm-5">
+  								<div class="icon">
+  									<i class="fa fa-info-circle" aria-hidden="true"></i>
+  								</div>
+  								<div><a class="card_button" href="#">INFO</a></div>
+  							</div>
+  							<div class="about__datum px-5 px-xl-3 px-md-2 px-lg-3 px-sm-5">
+  								<div class="icon">
+  									<i class="fa fa-window-close" aria-hidden="true"></i>
+  								</div>
+  									<div><a class="card_button" href=# data-confirm="정말로 삭제하시겠습니까?">SUB</a></div>
+  							</div>
+  							<div class="about__datum pl-4 pl-xl-3 pl-md-3 pl-lg-4 pl-sm-5">
+  									<div class="icon">
+  										<i class="fa fa-star" aria-hidden="true"></i>
+  									</div>
+  								<div><a class="card_button" href="/posts/index">REVIEW</a></div>
+  							</div>
+  						</div>
+  	  		</div>
+  		  </div>
+  		</div>
+  	</div>
+  </div> - -->
