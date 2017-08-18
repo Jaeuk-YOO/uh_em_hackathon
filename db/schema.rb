@@ -16,7 +16,6 @@ ActiveRecord::Schema.define(version: 20170818062219) do
     t.string "menuCount"
     t.json "menuList"
     t.json "menuboardphotourlList"
-
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -24,7 +23,6 @@ ActiveRecord::Schema.define(version: 20170818062219) do
   create_table "posts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "title"
     t.text "content"
-
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -70,8 +68,13 @@ ActiveRecord::Schema.define(version: 20170818062219) do
     t.datetime "last_sign_in_at"
     t.string "current_sign_in_ip"
     t.string "last_sign_in_ip"
+    t.string "confirmation_token"
+    t.datetime "confirmed_at"
+    t.datetime "confirmation_sent_at"
+    t.string "unconfirmed_email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
