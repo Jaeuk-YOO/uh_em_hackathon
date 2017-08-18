@@ -1,4 +1,21 @@
 Rails.application.routes.draw do
+
+    get '/posts/index' => 'posts#index'
+
+    get '/posts/show/:id' => 'posts#show'
+
+    get '/posts/new'
+
+    get '/posts/create'
+
+    get '/posts/edit/:id' => 'posts#edit'
+
+    get '/posts/update/:id' => 'posts#update'
+
+    get '/posts/destroy/:id' => 'posts#destroy'
+
+
+
   resources :review_posts
   devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
