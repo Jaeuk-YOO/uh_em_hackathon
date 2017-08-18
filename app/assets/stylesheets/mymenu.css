@@ -85,7 +85,6 @@ a.bg-setting:hover {
 
 .about__datum {
   flex-direction:column;
-  border-right: 1px solid;
 }
 
 /*수진추가*/

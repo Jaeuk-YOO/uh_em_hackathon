@@ -1,13 +1,23 @@
-<% @post.each do |x| %>
-<p>
-<h2><%= x.id %></h2>
-<p><%= x.content%></P>
-<%= link_to '글 수정하기', "/posts/edit/#{x.id}" %>
-<a href="/posts/destroy/<%= x.id %>" data-confirm="정말 삭제하시겠습니까??">글 삭제하기</a>
-
-</p>
-<% end %>
-<form action="/posts/create">
-     <input type="textarea" name="content" placeholder="내용을 입력하세요.">
-    <button type="submit" >제출하기!</button>
-</form>
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <div class="review__text">
+        <% @post.each do |x| %>
+          <h2><%= x.id %>번째 리뷰</h2>
+          <h4><%= x.content%></h4>
+          <%= link_to '글 수정하기', "/posts/edit/#{x.id}" %>
+          <a href="/posts/destroy/<%= x.id %>" data-confirm="정말 삭제하시겠습니까??">글 삭제하기</a>
+          <% end %>
+      </div>
+    </div>
+<hr>
+    <div class="container">
+      <div class="col-4">
+        <form action="/posts/create">
+            <h3>리뷰를 달아주세요 :<input type="textarea" name="content" placeholder="내용을 입력하세요."></h3>
+            <h2><button type="submit" >제출하기!</button></h2>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
