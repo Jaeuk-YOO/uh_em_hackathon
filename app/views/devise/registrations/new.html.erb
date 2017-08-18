@@ -1,9 +1,7 @@
 
-  <h2 style="text-align:center">Sign up</h2>
-
+<h2 style="text-align:center">Sign up</h2>
 <div class = "log">
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-    <%= devise_error_messages! %>
 
     <div class="field">
       <%= f.label :이름 %><br />
@@ -35,3 +33,4 @@
 
   <!-- <%= render "devise/shared/links" %> -->
 </div>
+<%= devise_error_messages! %>
