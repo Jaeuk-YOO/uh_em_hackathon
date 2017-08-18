@@ -2,9 +2,8 @@
 @import 'demo';
 
 // google web font hangeal
-@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
-@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
-@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+@import url('http://fonts.googleapis.com/earlyaccess/notosanskr.css');
 /*
 
  * This is a manifest file that'll be compiled into application.css, which will include all the files
@@ -46,6 +45,10 @@
    box-sizing: border-box;
  }
 
+ [lang="en"]{
+   font-family: 'Slabo 27px', serif;
+ }
+
 .index {
   width: 100%;
   height: 100vh;
@@ -81,6 +84,15 @@
   letter-spacing: 0.05rem;
   font-size: 0.7rem;
   text-align: right;
+}
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+.navbar .navbar-nav .nav-item .nav-link {
+  letter-spacing: 0.05rem;
+  font-size: 0.7rem;
+  text-align: right;
+  padding: 0.3rem 0;
 }
 }
 
