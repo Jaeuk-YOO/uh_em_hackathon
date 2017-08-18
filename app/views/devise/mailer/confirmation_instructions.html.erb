@@ -1,9 +1,10 @@
 <div class = "log">
 
-  <p>Welcome <%= @email %>!</p>
+  <p> 어-음을 이용해주셔서 감사합니다! <%= @email %>!</p>
 
-  <p>You can confirm your account email through the link below:</p>
+  <p> 가입을 완료하시려면 아래의 링크를 클릭해주세요:')' </p>
 
-  <p><%= link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token) %></p>
+  <p><%= link_to '가입 승인하기', confirmation_url(@resource, confirmation_token: @token) %></p>
+
 
 </div>
